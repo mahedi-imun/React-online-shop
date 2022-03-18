@@ -1,10 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import MenuBar from './Components/Shared/Menu-bar/MenuBar';
+
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-info">hello react </h1>
+      <MenuBar></MenuBar>
+      
+      
     </div>
   );
 }
