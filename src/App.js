@@ -15,7 +15,6 @@ function App() {
     <div className="App">
       <MenuBar count={count}></MenuBar>
       <Products setCartCount={setCartCount}></Products>
-
     </div>
   );
 }
