@@ -9,12 +9,12 @@ const ReactModal = (props) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <>
+    < > 
       <Button variant="primary" onClick={handleShow}>
         Details
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal data-aos="flip-right" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <img className="w-25" src={image} alt="" />
           <Modal.Title>{title}</Modal.Title>

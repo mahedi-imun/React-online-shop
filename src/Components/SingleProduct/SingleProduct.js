@@ -7,9 +7,13 @@ const SingleProduct = (props) => {
     // console.log(props.setCartCount)
     const { title, price, image } = props.product
     return (
-        <div className="col-md-4 col-6 mt-5 ">
+        
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+         className="col-md-4 col-6 mt-5  ">
          <div style={{ height: '25rem' }} className='shadow '>
-             <Card.Img className='w-50 h-50 mx-auto' variant="top" src={image} />
+             <Card.Img  className='w-50 h-50 mx-auto' variant="top" src={image} />
              <Card.Body>
              <h5 className='text-danger' >{title.slice(0,15)}</h5>
              <h4>${price}</h4>
